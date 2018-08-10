@@ -16,6 +16,9 @@ public class UserReview
 	@JsonProperty("review")
 	private String reviewText;
 	
+	@JsonProperty("rating")
+	private Integer rating;
+
 	public Integer getProductId()
 	{
 		return productId;
@@ -48,7 +51,13 @@ public class UserReview
 	{
 		this.reviewText = reviewText;
 	}
-	
-	
+	public Integer getRating()
+	{
+		return rating;
+	}
+	public void setRating(Integer rating)
+	{
+		this.rating = rating;
+	}
 	
 }
