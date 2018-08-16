@@ -4,6 +4,7 @@ public class ProductReviewResponse
 {
 	private Boolean success;
 	private Integer reviewId;
+	private String errorMessage;
 	
 	public ProductReviewResponse(Boolean success, Integer reviewId)
 	{
@@ -25,6 +26,12 @@ public class ProductReviewResponse
 	public void setReviewId(Integer reviewId)
 	{
 		this.reviewId = reviewId;
+	}
+	public String getErrorMessage() {
+		return errorMessage;
+	}
+	public void setErrorMessage(String errorMessage) {
+		this.errorMessage = errorMessage;
 	}
 	
 	
