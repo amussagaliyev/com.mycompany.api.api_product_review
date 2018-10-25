@@ -88,6 +88,15 @@
 					<skip>true</skip>
 				</configuration>
 			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugin</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+			</plugin>
 		</plugins>
 	</build>
+	
+	<scm>
+		<developerConnection>scm:git:https://github.com/amussagaliyev/com.mycompany.api.api_product_review.git</developerConnection>
+		<tag>release/1.0</tag>
+	</scm>
 </project>
